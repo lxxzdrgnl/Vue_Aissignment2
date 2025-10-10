@@ -484,7 +484,7 @@ body {
 }
 .btn--ghost:hover { color: #ff8a8a; background: rgba(255, 100, 100, 0.1); }
 
-.comment-list { margin-top: 16px; display: grid; gap: 10px; }
+.comment-list { margin-top: 16px; display: grid; gap: 10px; padding: 0; }
 .comment-item {
   padding: 14px 16px;
   border-radius: 12px;
@@ -519,5 +519,16 @@ body {
   .subtitle { font-size: 16px; }
   .input-row { flex-direction: column; gap: 12px; }
   .text-input, .btn { width: 100%; }
+  .comment-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .comment-meta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
 }
 </style>
